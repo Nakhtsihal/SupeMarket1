@@ -29,24 +29,19 @@ sup.addProduct(p5, 12);
 sup.addProduct(p6, 30);
 sup.addProduct(p7, 23);
 	     
-sup.displayProducts();
-Product p8 = 
-	    new Product("Cereal", 105, 3.99, "per box");
+Product p8 = new Product("Cereal", 105, 3.99, "per box");
 sup.addProduct(p8, 15);
-sup.displayProducts();
 
 sup.removeProduct(106, 10);
 sup.displayProducts();
 
 sup.removeProduct(105);
-sup.displayProducts();
-
 sup.removeProduct(101,50);
 
 sup.findProduct(106);
 sup.printZeroStock();
+System.out.println("Total cost of products: " + sup.getTotalCost());
 
-	System.out.println("Total cost of products: " + sup.getTotalCost());
 }
 
 }
@@ -68,24 +63,6 @@ sup.printZeroStock();
        displayAllProducts()
        removeProduct(code , int quantity)
        removeProduct(code)
-1.
-public void findProduct(int code)
-------------------
-name: Toothpaste, code: 107, price: 2.99, unit: per tube
-quantity: 23
-------------------
-Error in case the product is not found
-2.
-public void printZeroStock()
--------------------------------------------------
-name: Toothpaste, code: 107, price: 2.99, unit: per tube
-quantity: 0
-----------------------------------------------------
-........
-3.
-public double getTotalCost()
-calculate total cost of all products in supermarket
-print total cost in main
 
 
 

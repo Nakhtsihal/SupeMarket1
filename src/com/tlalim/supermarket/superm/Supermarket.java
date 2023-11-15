@@ -114,7 +114,7 @@ public class Supermarket {
 		double total = 0;
 		for (Product p : keys) {
 			total += products.get(p);
-			//total = p.getPrice() * products.get(p);
+			total = p.getPrice() * products.get(p);
 
 		}
 		return total;
